@@ -6,14 +6,15 @@ using namespace std;
 class Node {
 	public:
 		// the Node should contain
-		// 	- an integer "key" that holds the value of the Node
-		// 	- a pointer to each child possible child node ("right" and "left")
+		int key;// 	- an integer "key" that holds the value of the Node
+		Node *left;// 	- a pointer to each child possible child node ("right" and "left")
+		Node *right;
 
-
-		// Write a constructor for the Node
-		// input: only an integer value for "key", no pointer arguments
-		// 		right and left pointers should be null
-
+		Node(int inkey ) { // Write a constructor for the Node
+		key = inkey; // input: only an integer value for "key", no pointer arguments
+		left = nullptr; // 		right and left pointers should be null
+		right = nullptr;
+		}
 };
 
 
